@@ -20,9 +20,9 @@ Introducing `is.js`: a small utility library for checking variable formats. Need
 
 If everything goes according to plan, the above code will alert "Yep!". The following functions are available:
 
-### Format Checking
-
 <table>
+	<tr><th colspan="2">Format Checking</th></tr>
+	
 	<tr>
 		<td> `is.email( email )` </th>
 		<td>Checks for valid email address, using a RegEx similar to that found in HTML5 form validation.</td>
@@ -42,11 +42,9 @@ If everything goes according to plan, the above code will alert "Yep!". The foll
 		<td> `is.phone( phone )` </th>
 		<td>Checks for a 10-digit phone number with multiple delimiters. Matches (111) 222-3333, 1112223333, and 111-222-3333.</td>
 	</tr>
-</table>
 
-### Type Checking
+	<tr><th colspan="2">Type Checking</th></tr>
 
-<table>
 	<tr>
 		<td> `is.string( string )` </th>
 		<td>Checks whether a variable is a String object.</td>
@@ -66,11 +64,10 @@ If everything goes according to plan, the above code will alert "Yep!". The foll
 		<td> `is.array( array )` </th>
 		<td>Checks whether a variable is an Array object.</td>
 	</tr>
-</table>
 
-### Number Checking
 
-<table>
+	<tr><th colspan="2">Number Checking</th></tr>
+
 	<tr>
 		<td> `is.wholeNum( number )` </th>
 		<td>Checks whether input is a whole number. Accepts both numbers and strings.</td>
