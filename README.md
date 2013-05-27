@@ -24,44 +24,44 @@ If everything goes according to plan, the above code will alert "Yep!". The foll
 	<tr><th colspan="2">Format Checking</th></tr>
 	
 	<tr>
-		<td> is.email( email ) </th>
+		<td> <code>is.email( email )</code> </th>
 		<td>Checks for valid email address, using a RegEx similar to that found in HTML5 form validation.</td>
 	</tr>
 
 	<tr>
-		<td> is.url( url ) </th>
+		<td> <code>is.url( url )</code> </th>
 		<td>Checks for a valid URL. Requires http/https/ftp prefix.</td>
 	</tr>
 
 	<tr>
-		<td> is.date( date ) </th>
+		<td> <code>is.date( date )</code> </th>
 		<td>Checks for a valid US date format, using / delimiters. Matches 01/01/2001, 1/1/2001, and 01/1/01.</td>
 	</tr>
 
 	<tr>
-		<td> is.phone( phone ) </th>
+		<td> <code>is.phone( phone )</code> </th>
 		<td>Checks for a 10-digit phone number with multiple delimiters. Matches (111) 222-3333, 1112223333, and 111-222-3333.</td>
 	</tr>
 
 	<tr><th colspan="2">Type Checking</th></tr>
 
 	<tr>
-		<td> is.string( string ) </th>
+		<td> <code>is.string( string )</code> </th>
 		<td>Checks whether a variable is a String object.</td>
 	</tr>
 
 	<tr>
-		<td> is.number( number ) </th>
+		<td> <code>is.number( number )</code> </th>
 		<td>Checks whether a variable is a Number object.</td>
 	</tr>
 
 	<tr>
-		<td> is.bool( bool ) </th>
+		<td> <code>is.bool( bool )</code> </th>
 		<td>Checks whether a variable is a Boolean object.</td>
 	</tr>
 
 	<tr>
-		<td> is.array( array ) </th>
+		<td> <code>is.array( array )</code> </th>
 		<td>Checks whether a variable is an Array object.</td>
 	</tr>
 
@@ -69,17 +69,17 @@ If everything goes according to plan, the above code will alert "Yep!". The foll
 	<tr><th colspan="2">Number Checking</th></tr>
 
 	<tr>
-		<td> is.wholeNum( number ) </th>
+		<td> <code>is.wholeNum( number )</code> </th>
 		<td>Checks whether input is a whole number. Accepts both numbers and strings.</td>
 	</tr>
 
 	<tr>
-		<td> is.even( number ) </th>
+		<td> <code>is.even( number )</code> </th>
 		<td>Checks whether input is an even number. Accepts both numbers and strings.</td>
 	</tr>
 
 	<tr>
-		<td> is.odd( number ) </th>
+		<td> <code>is.odd( number )</code> </th>
 		<td>Checks whether input is an odd number. Accepts both numbers and strings.</td>
 	</tr>
 </table>
@@ -90,22 +90,22 @@ Thanks! I agree! In fact, most RegEx have issues. That's why `is.js` lets you se
 
 <table>
 	<tr>
-		<td> is.setEmailRegex( string ) </th>
+		<td> <code>is.setEmailRegex( string )</code> </th>
 		<td>Sets the regex for checking email addresses.</td>
 	</tr>
 
 	<tr>
-		<td> is.setURLRegex( string ) </th>
+		<td> <code>is.setURLRegex( string )</code> </th>
 		<td>Sets the regex for checking URLs.</td>
 	</tr>
 
 	<tr>
-		<td> is.setDateRegex( string ) </th>
+		<td> <code>is.setDateRegex( string )</code> </th>
 		<td>Sets the regex for checking dates.</td>
 	</tr>
 
 	<tr>
-		<td> is.setPhoneRegex( string ) </th>
+		<td> <code>is.setPhoneRegex( string )</code> </th>
 		<td>Sets the regex for checking phone numbers.</td>
 	</tr>
 </table>
