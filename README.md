@@ -112,6 +112,9 @@ Thanks! I agree! In fact, most RegEx have issues. That's why `is.js` lets you se
 
 ## Change Log
 
+* _11.01.13 - version 1.0.1 - 1kb_
+	* Updated URL Regex to John Gruber v2.0 (http://daringfireball.net/2010/07/improved_regex_for_matching_urls)
+
 * _05.26.13 - version 1.0.0 - 1kb_
 	* Initial release.
 

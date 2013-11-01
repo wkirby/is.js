@@ -23,7 +23,7 @@
 	// ------------------------------------------------------------------------
 
 	var emailRegex = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,253}[a-zA-Z0-9])?)*$"), // HTML5 Compliant
-		urlRegex   = new RegExp("^(http|https|ftp)\\://[a-zA-Z0-9\\-\\.]+\\.[a-zA-Z]{2,3}(:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\\-\\._\\?\\,\\'/\\\\+&amp;%\\$#\\=~])*$"), // Requires http/https/ftp
+		urlRegex   = new RegExp("^(?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’])$"),
 		dateRegex  = new RegExp("^(([1-9])|(0[1-9])|(1[0-2]))\\/((0[1-9])|([1-31]))\\/((\\d{2})|(\\d{4}))$"), // Matches: 01/01/2001, 1/1/2001, 01/1/01
 		phoneRegex = new RegExp("^\\D?(\\d{3})\\D?\\D?(\\d{3})\\D?(\\d{4})$"); // Matches: (111) 222-3333, 1112223333, 111-222-3333
 
@@ -44,19 +44,19 @@
 	// Format Checking
 
 	is.email = function(input) {
-		return compare(input, is.regexLibrary.email);
+		return compare(input, emailRegex);
 	};
 
 	is.url = function(input) {
-		return compare(input, is.regexLibrary.url);
+		return compare(input, urlRegex);
 	};
 
 	is.date = function(input) {
-		return compare(input, is.regexLibrary.date);
+		return compare(input, dateRegex);
 	};
 
 	is.phone = function(input) {
-		return compare(input, is.regexLibrary.phone);
+		return compare(input, phoneRegex);
 	};
 
 	// Type Checking
